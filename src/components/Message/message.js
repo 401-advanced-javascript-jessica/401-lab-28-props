@@ -7,6 +7,7 @@ class Message extends React.Component {
     this.state = {
       text: this.props.text,
       name: this.props.name,
+      number: 7,
     };
   }
 
@@ -15,7 +16,7 @@ class Message extends React.Component {
         <>
         <div>{this.state.text}</div>
     <p>{this.state.name}</p>
-          <Button name={this.state.name}/>
+          <Button name={this.state.name} number={this.state.number}/>
     </>
     );
   }
